@@ -1,0 +1,45 @@
+.basic-tab{
+  width: 100%;
+  padding: 0 100px;
+  margin: 20px 0;
+  font-size: 0.85rem;
+}
+
+.bread-crumb{
+  margin: 10px 0;
+}
+
+.form{
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.col{
+  margin: 10px 0;
+}
+
+.add-more-btn{
+  padding: 0;
+  font-size: 0.85rem;
+}
+
+.button{
+  margin: 20px 0 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nxt-btn, .back-btn{
+  height: 40px;
+  width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nxt-arrow-icon, .back-arrow-icon{
+  font-size: 1.5rem;
+}
