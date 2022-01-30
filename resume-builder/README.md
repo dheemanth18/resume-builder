@@ -1,13 +1,13 @@
 RESUME BUILDER
-*******************************************
+-------------------------------------------
 Front-End Project with React.js
-*******************************************
+-------------------------------------------
 'Resume Builder' is a web application which creates Resume / CV
 User needs to provide Personal details, Education details, Work details, Skill details, Awards details, so that 'Resume Builder' tool can create Resume.
 
 This is currently the front-end for 'Resume Builder'
 
-*******************************************
+-------------------------------------------
 
 Dependencies used for this project
 
@@ -17,7 +17,7 @@ Dependencies used for this project
 - Boostrap 4
 - React Tag Input
 
-*******************************************
+-------------------------------------------
 
 How to run this project ?
 
@@ -27,14 +27,14 @@ How to run this project ?
 - After dependency installation, Run 'npm start'
   - Once the development server starts, Hit 'localhost:3000' in your browser
 
-*******************************************
+-------------------------------------------
 
 What's in UI ?
 
 - Landing page will be displayed once 'npm start' is successfully runs
 - After exploring the landing page, Click on 'Create Resume' button which takes to page where the details can be given
 
-*******************************************
+-------------------------------------------
 
 Resume Builder Features
 
