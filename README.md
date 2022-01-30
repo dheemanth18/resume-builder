@@ -8,7 +8,7 @@ User needs to provide Personal details, Education details, Work details, Skill d
 > This is currently the front-end for 'Resume Builder'
 
 
-Dependencies used for this project
+###### Dependencies used for this project
 
   - React Router
   - React Router DOM
@@ -18,7 +18,7 @@ Dependencies used for this project
 
 
 
-How to run this project ?
+###### How to run this project ?
 
   - Once the project is cloned to local computer
   - In the command prompt run `cd resume-builder`
@@ -27,15 +27,15 @@ How to run this project ?
     - Once the development server starts, Hit `localhost:3000` in your browser
 
 
-What's in UI ?
+###### What's in UI ?
 
 - Landing page will be displayed once `npm start` is successfully runs
 - After exploring the landing page, Click on 'Create Resume' button which takes to page where the details can be given
 
 
-Resume Builder Features
+###### Resume Builder Features
 
 - Validation is there on 'Personal Details', 'Education' and 'Work History'
 - 'Skills' and 'Awards and Accomplishment' doesn't have validation
 
-Clone, Run, Enjoy! :slightly_smiling_face:
+###### Clone, Run, Enjoy! :slightly_smiling_face:
