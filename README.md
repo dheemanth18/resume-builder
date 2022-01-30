@@ -1,4 +1,4 @@
-## **RESUME BUILDER**
+## **Resume Builder**
 
 > Front-End Project with React.js
 
