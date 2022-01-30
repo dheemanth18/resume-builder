@@ -52,3 +52,9 @@
 .nxt-arrow-icon, .back-arrow-icon{
   font-size: 1.5rem;
 }
+
+
+.valid-check{
+  opacity: 0.4;
+  pointer-events: none;
+}

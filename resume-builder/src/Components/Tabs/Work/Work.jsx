@@ -13,9 +13,23 @@ import {
 import { ProgressBar, Form, Row, Col, Breadcrumb } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Link } from "react-router-dom";
-import { Nav, Footer } from "../../export.helper";
+import { Nav } from "../../export.helper";
+
 
 const Work = () => {
+
+  const handleCheckbox = (e) => {
+    const checkbox = document.getElementById("checkbox");
+    const workForm = document.getElementById("work-form")
+    const condition = checkbox.checked
+    if (condition === true) {
+      workForm.className = "valid-check"
+    }
+    if (condition === false) {
+      workForm.className = "invalid-check"
+    }
+  };
+
   return (
     <div className="work-container">
       <Nav />
@@ -40,74 +54,81 @@ const Work = () => {
             <RiNumber5 /> Awards and Achievement
           </Breadcrumb.Item>
         </Breadcrumb>
-        <Form className="work-form">
-          <Form.Check
-            className="no-work-check-box"
-            type={"checkbox"}
-            label={"I don't have any work history"}
-          />
-          <Row className="row">
-            <Col className="col-sm-6 col">
-              <Form.Group>
-                <Form.Label className="text-primary">Job Title</Form.Label>
-                <Form.Control
-                  size="sm"
-                  type="text"
-                  placeholder="Enter your Job Title"
-                />
-              </Form.Group>
-            </Col>
-          </Row>
-          <Row className="row">
-            <Col className="col-sm-6">
-              <Form.Group>
-                <Form.Label className="text-primary">Employeer Name</Form.Label>
-                <Form.Control
-                  size="sm"
-                  type="text"
-                  placeholder="Enter your Company Name"
-                />
-              </Form.Group>
-            </Col>
-            <Col className="col-sm-6">
-              <Form.Group>
-                <Form.Label className="text-primary">
-                  Employeer Location
-                </Form.Label>
-                <Form.Control
-                  size="sm"
-                  type="text"
-                  placeholder="Enter your Job Location"
-                />
-              </Form.Group>
-            </Col>
-          </Row>
-          <Row className="row">
-            <Col className="col-sm-6 col">
-              <Form.Group>
-                <Form.Label className="text-primary">Start Date</Form.Label>
-                <Form.Control size="sm" type="date" />
-              </Form.Group>
-            </Col>
-            <Col className="col-sm-6">
-              <Form.Group>
-                <Form.Label className="text-primary">End Date</Form.Label>
-                <Form.Control size="sm" type="date" />
-                <Form.Check
-                  className="check-box"
-                  type={"checkbox"}
-                  label={"I currenltly work here"}
-                />
-              </Form.Group>
-            </Col>
-          </Row>
-          <div className="add-more">
-            <RiAddLine className="text-info" />
-            <Link to="" className="add-more-btn">
-              Add More Details in Work History
-            </Link>
-          </div>
-        </Form>
+        <Form.Check
+          className="no-work-check-box"
+          id="checkbox"
+          type={"checkbox"}
+          label={"I don't have any work history"}
+          value={"checked"}
+          onClick={handleCheckbox}
+        />
+        <div id="work-form" className="invalid-checkbox">
+          <Form className="work-form">
+            <Row className="row">
+              <Col className="col-sm-6 col">
+                <Form.Group>
+                  <Form.Label className="text-primary">Job Title</Form.Label>
+                  <Form.Control
+                    size="sm"
+                    type="text"
+                    placeholder="Enter your Job Title"
+                  />
+                </Form.Group>
+              </Col>
+            </Row>
+            <Row className="row">
+              <Col className="col-sm-6">
+                <Form.Group>
+                  <Form.Label className="text-primary">
+                    Employeer Name
+                  </Form.Label>
+                  <Form.Control
+                    size="sm"
+                    type="text"
+                    placeholder="Enter your Company Name"
+                  />
+                </Form.Group>
+              </Col>
+              <Col className="col-sm-6">
+                <Form.Group>
+                  <Form.Label className="text-primary">
+                    Employeer Location
+                  </Form.Label>
+                  <Form.Control
+                    size="sm"
+                    type="text"
+                    placeholder="Enter your Job Location"
+                  />
+                </Form.Group>
+              </Col>
+            </Row>
+            <Row className="row">
+              <Col className="col-sm-6 col">
+                <Form.Group>
+                  <Form.Label className="text-primary">Start Date</Form.Label>
+                  <Form.Control size="sm" type="date" />
+                </Form.Group>
+              </Col>
+              <Col className="col-sm-6">
+                <Form.Group>
+                  <Form.Label className="text-primary">End Date</Form.Label>
+                  <Form.Control size="sm" type="date" />
+                  <Form.Check
+                    className="check-box"
+                    type={"checkbox"}
+                    label={"I currently work here"}
+                  />
+                </Form.Group>
+              </Col>
+            </Row>
+            <div className="add-more">
+              <RiAddLine className="text-info" />
+              <Link to="" className="add-more-btn">
+                Add More Details in Work History
+              </Link>
+            </div>
+          </Form>
+        </div>
         <div className="button">
           <Link
             to="/education"
@@ -120,7 +141,6 @@ const Work = () => {
           </Link>
         </div>
       </div>
-      <Footer/>
     </div>
   );
 };

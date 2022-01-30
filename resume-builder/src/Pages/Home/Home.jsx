@@ -22,7 +22,7 @@ const Home = () => {
         </Alert>
         <h1 className="home-heading">Hey there!</h1>
         <p className="home-note">
-          Create your Resume now, Resume Builder is Easy, Effective, Impressive
+          Resume Builder is Easy, Effective, Impressive
         </p>
         <div className="button">
           <Link to="/personal" className="btn btn-primary btn-sm nxt-btn">

@@ -9,8 +9,8 @@
   margin: 10px 0;
 }
 
-.form {
-  height: 300px;
+.education-form {
+  height: 320px;
   display: flex;
   flex-direction: column;
   justify-content: center;

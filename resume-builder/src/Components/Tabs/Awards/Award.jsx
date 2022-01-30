@@ -13,7 +13,7 @@ import {
 import { ProgressBar, Form, Row, Col, Breadcrumb, Alert} from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Link } from "react-router-dom";
-import { Nav, Footer } from "../../export.helper";
+import { Nav } from "../../export.helper";
 
 const Award = () => {
   return (
@@ -40,7 +40,7 @@ const Award = () => {
             <RiNumber5 /> Awards and Achievement
           </Breadcrumb.Item>
         </Breadcrumb>
-        <Alert variant="warning" className="award-note text-warning">These are not mandatory fields. You can skip these if you are not willing to add it in your Resume.</Alert>
+        <Alert variant="warning" className="award-note text-danger">These are not mandatory fields. You can skip these if you are not willing to add it in your Resume.</Alert>
         <Form className="form">
           <Row className="row">
             <Col className="col-sm-6 col">
@@ -102,7 +102,6 @@ const Award = () => {
           </Link>
         </div>
       </div>
-      <Footer />
     </div>
   );
 };

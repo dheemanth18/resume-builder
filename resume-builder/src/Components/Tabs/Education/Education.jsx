@@ -13,7 +13,7 @@ import {
 import { ProgressBar, Form, Row, Col, Breadcrumb } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Link, useNavigate } from "react-router-dom";
-import { Nav, Footer } from "../../export.helper";
+import { Nav } from "../../export.helper";
 
 const Education = () => {
   const [form, setForm] = useState({});
@@ -94,7 +94,7 @@ const Education = () => {
             <RiNumber5 /> Awards and Achievement
           </Breadcrumb.Item>
         </Breadcrumb>
-        <Form className="form">
+        <Form className="education-form">
           <Row className="row">
             <Col className="col-sm-6 col">
               <Form.Group>
@@ -139,6 +139,10 @@ const Education = () => {
                   onChange={(e) => setField("degree", e.target.value)}
                   isInvalid={!!errors.degree}
                 >
+                  <option disabled selected value>
+                    {" "}
+                    Select an option
+                  </option>
                   <option>High School</option>
                   <option>Higher Secondary</option>
                   <option>Bachelor's Degree</option>
@@ -196,7 +200,7 @@ const Education = () => {
                 <Form.Check
                   className="check-box"
                   type={"checkbox"}
-                  label={"I currenltly studying here"}
+                  label={"I currently studying here"}
                 />
               </Form.Group>
             </Col>
@@ -224,7 +228,6 @@ const Education = () => {
           </Link>
         </div>
       </div>
-      <Footer />
     </div>
   );
 };

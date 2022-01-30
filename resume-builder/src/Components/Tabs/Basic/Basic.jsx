@@ -12,7 +12,7 @@ import {
 import { ProgressBar, Form, Row, Col, Breadcrumb } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Link, useNavigate } from "react-router-dom";
-import { Nav, Footer } from "../../export.helper";
+import { Nav } from "../../export.helper";
 
 const Basic = () => {
   const [form, setForm] = useState({});
@@ -181,7 +181,6 @@ const Basic = () => {
           </Link>
         </div>
       </div>
-      <Footer />
     </div>
   );
 };
