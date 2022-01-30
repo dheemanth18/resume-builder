@@ -19,7 +19,7 @@ How to run this project ?
     - Once the development server starts, Hit 'localhost:3000' in your browser
 
 What's in UI ?
-  - Landing page will displayed once 'npm start' is successfully runs
+  - Landing page will be displayed once 'npm start' is successfully runs
   - After exploring the landing page, Click on 'Create Resume' button which takes to page where the details can be given
 
 Features
