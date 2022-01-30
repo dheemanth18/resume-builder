@@ -200,7 +200,7 @@ const Education = () => {
                 <Form.Check
                   className="check-box"
                   type={"checkbox"}
-                  label={"I currently studying here"}
+                  label={"I currently study here"}
                 />
               </Form.Group>
             </Col>
