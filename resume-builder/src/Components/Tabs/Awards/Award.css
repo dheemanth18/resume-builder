@@ -12,6 +12,11 @@
   justify-content: center;
 }
 
+.award-note{
+  font-size: 0.85rem;
+  margin: 0;
+}
+
 .col {
   margin: 10px 0;
 }

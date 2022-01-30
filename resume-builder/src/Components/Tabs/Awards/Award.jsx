@@ -10,7 +10,7 @@ import {
   RiNumber4,
   RiNumber5,
 } from "react-icons/ri";
-import { ProgressBar, Form, Row, Col, Breadcrumb } from "react-bootstrap";
+import { ProgressBar, Form, Row, Col, Breadcrumb, Alert} from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Link } from "react-router-dom";
 import { Nav, Footer } from "../../export.helper";
@@ -40,6 +40,7 @@ const Award = () => {
             <RiNumber5 /> Awards and Achievement
           </Breadcrumb.Item>
         </Breadcrumb>
+        <Alert variant="warning" className="award-note text-warning">These are not mandatory fields. You can skip these if you are not willing to add it in your Resume.</Alert>
         <Form className="form">
           <Row className="row">
             <Col className="col-sm-6 col">
@@ -93,12 +94,15 @@ const Award = () => {
           >
             <RiArrowLeftSFill className="back-arrow-icon" /> Back
           </Link>
-          <Link to="/resume" className="btn btn-primary btn-sm nxt-btn">
+          <Link
+            to="/resume"
+            className="btn btn-primary btn-sm nxt-btn"
+          >
             Submit <RiArrowRightSFill className="nxt-arrow-icon" />
           </Link>
         </div>
       </div>
-      <Footer/>
+      <Footer />
     </div>
   );
 };

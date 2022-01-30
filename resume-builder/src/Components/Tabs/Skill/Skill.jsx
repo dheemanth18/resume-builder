@@ -72,7 +72,6 @@ const Skill = () => {
 
   return (
     <div className="skill-container">
-      <Nav />
       <div className="skill-tab">
         <div className="progress-bar">
           <ProgressBar now={60} label={"60%"} animated />

@@ -7,7 +7,7 @@ import {
   RiNumber1,
   RiNumber0,
 } from "react-icons/ri";
-import { Card, ListGroup, ListGroupItem } from "react-bootstrap";
+import { Card, ListGroup, ListGroupItem, Alert } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Link } from "react-router-dom";
 import { Nav, Footer } from "../../Components/export.helper";
@@ -17,6 +17,9 @@ const Home = () => {
     <div className="home-conatiner">
       <Nav />
       <div className="home-intro">
+        <Alert variant="info">
+          Buy the subscription for seamless experience of Resume Builder
+        </Alert>
         <h1 className="home-heading">Hey there!</h1>
         <p className="home-note">
           Create your Resume now, Resume Builder is Easy, Effective, Impressive
@@ -93,8 +96,11 @@ const Home = () => {
                 <RiNumber5 />
                 <RiNumber0 /> Free templates per month
               </ListGroupItem>
-              <ListGroupItem>Resume can be edited upto <RiNumber5 />
-                <RiNumber0 />times</ListGroupItem>
+              <ListGroupItem>
+                Resume can be edited upto <RiNumber5 />
+                <RiNumber0 />
+                times
+              </ListGroupItem>
             </ListGroup>
             <Card.Body>
               <Link to="" className="btn btn-outline-primary btn-sm back-btn">
@@ -104,7 +110,7 @@ const Home = () => {
           </Card>
         </div>
       </div>
-      <Footer/>
+      <Footer />
     </div>
   );
 };
