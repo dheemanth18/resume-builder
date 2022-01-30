@@ -1,4 +1,5 @@
-RESUME BUILDER - Front-end React.js Project
+RESUME BUILDER
+Front-end React.js Project
 
 'Resume Builder' is a web application which creates Resume / CV
 User needs to provide Personal details, Education details, Work details, Skill details, Awards details, so that 'Resume Builder' tool can create Resume. 
