@@ -9,11 +9,15 @@
   margin: 10px 0;
 }
 
-.form {
-  height: 300px;
+.work-form {
+  height: 350px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+.no-work-check-box{
+  margin: 20px 0;
 }
 
 .col {

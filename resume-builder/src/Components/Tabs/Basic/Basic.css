@@ -9,8 +9,8 @@
   margin: 10px 0;
 }
 
-.form{
-  height: 300px;
+.basic-form{
+  height: 350px;
   display: flex;
   flex-direction: column;
   justify-content: center;

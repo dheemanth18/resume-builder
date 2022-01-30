@@ -1,0 +1,43 @@
+.build-conatiner{
+  width: 100%;
+}
+
+.logo-link{
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.logo-link:hover{
+  color: #dddddd;
+  text-decoration: none;
+}
+
+.resume-view{
+  height: 300px;
+  width: 100%;
+  margin: 50px 0 0 0;
+  padding: 0 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.alert{
+  margin: 0 0 50px 0;
+  font-size: 0.9rem;
+}
+
+.loading-box{
+  height: 100px;
+  width: 100%;
+  margin: 50px 0 0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.loading-box .note{
+  margin: 30px 0 0 0;
+  font-size: 0.8rem;
+}
