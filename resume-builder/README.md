@@ -17,7 +17,6 @@ User needs to provide Personal details, Education details, Work details, Skill d
   - React Tag Input
 
 
-
 ###### How to run this project ?
 
   - Once the project is cloned to local computer
@@ -29,7 +28,7 @@ User needs to provide Personal details, Education details, Work details, Skill d
 
 ###### What's in UI ?
 
-- Landing page will be displayed once `npm start` is successfully runs
+- Landing page will be displayed once `npm start` is success
 - After exploring the landing page, Click on 'Create Resume' button which takes to page where the details can be given
 
 

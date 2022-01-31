@@ -15,18 +15,16 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { Link } from "react-router-dom";
 import { Nav } from "../../export.helper";
 
-
 const Work = () => {
-
   const handleCheckbox = (e) => {
     const checkbox = document.getElementById("checkbox");
-    const workForm = document.getElementById("work-form")
-    const condition = checkbox.checked
+    const workForm = document.getElementById("work-form");
+    const condition = checkbox.checked;
     if (condition === true) {
-      workForm.className = "valid-check"
+      workForm.className = "valid-check";
     }
     if (condition === false) {
-      workForm.className = "invalid-check"
+      workForm.className = "invalid-check";
     }
   };
 
@@ -112,8 +110,9 @@ const Work = () => {
               <Col className="col-sm-6">
                 <Form.Group>
                   <Form.Label className="text-primary">End Date</Form.Label>
-                  <Form.Control size="sm" type="date" />
+                  <Form.Control id="endDate" size="sm" type="date" />
                   <Form.Check
+                    id="end-checkbox"
                     className="check-box"
                     type={"checkbox"}
                     label={"I currently work here"}
